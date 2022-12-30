@@ -1,0 +1,24 @@
+#pragma version 4
+txn TypeEnum
+int 1
+==
+txn AssetAmount
+int 200
+<=
+&&
+txn Fee
+int 10000
+<
+&&
+txn RekeyTo
+global ZeroAddress
+==
+&&
+txn CloseRemainderTo
+global ZeroAddress
+==
+&& 
+txn AssetCloseTo
+global ZeroAddress
+==
+&&
